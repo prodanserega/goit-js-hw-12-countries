@@ -6,4 +6,51 @@
 // Стили для файла с примером HTML-фрагмента
 @import './example';
 
+.form-control {
+  margin-left: 100px;
+  margin-bottom: 100px;
+  margin-top: 50px;
+}
 
+.card__name {
+  margin-left: 50px;
+  font-size: 50px;
+}
+
+.title {
+  line-height: normal;
+  list-style: circle;
+  font-size: 35px;
+  margin-left: 50px;
+}
+
+ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+.card__image {
+  display: block;
+  width: 500px;
+  height: 300px;
+  margin-left: 100px;
+}
+
+.card__content{
+    display:flex;
+    
+}
+
+.languages-list__item{
+    margin-left: 70px;
+    margin-top:10px;
+}
+
+
+
+.card-container {
+    text-align: left;
+    margin-left: 50px;
+    font-size: 25px;
+  
+  }

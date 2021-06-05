@@ -12,8 +12,14 @@ import '@pnotify/core/dist/BrightTheme.css';
 PNotify.defaultModules.set(PNotifyMobile, {});
 import debounce from '../node_modules/lodash.debounce';
 
+function makeCountryCard(country) {
+  const countryMarkup = countryCard(country);
+  refs.cardContainer.insertAdjacentHTML('beforeend', countryMarkup);
+}
+
 const refs = getRefs();
 refs.searchForm.addEventListener('input', debounce(onSearch, 500));
+
 
 function onSearch(event) {
     refs.cardContainer.innerHTML = '';
@@ -59,7 +65,4 @@ function renderCountryCard(country) {
     refs.cardContainer.append(...itemsMarkup);
   }
   
-  function makeCountryCard(country) {
-    const countryMarkup = countryCard(country);
-    refs.cardContainer.insertAdjacentHTML('beforeend', countryMarkup);
-  }
+ 
